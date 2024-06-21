@@ -1,4 +1,3 @@
-<!-- resources/views/register.blade.php -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,10 +45,11 @@
                                 <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
                             </div>
 
-                            <button type="submit" class="mt-4 bg-transparent underline text-white text-sm">Register</button>
+                            <button type="submit" class="z-50 mb-4 font-bold bg-[#00A1A1] px-8 py-2 text-white rounded-lg text-xl">Register</button>
+
                         </form>
                     </div>
-                    <a href="{{ route('login') }}" class="z-50 mt-4 font-bold bg-[#00A1A1] px-8 py-2 text-white rounded-lg text-xl">
+                    <a href="{{ route('login') }}" class="mt-4 bg-transparent underline text-white text-sm">
                         <span class="text-white text-lg">
                         Already registered?
                         </span> Log in</a>
